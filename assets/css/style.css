@@ -761,8 +761,10 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .hero .container { flex-direction: column; text-align: center; padding-top: 2rem; }
   .hero-content p  { margin-inline: auto; }
   .hero-actions    { justify-content: center; }
-  .hero-visual     { order: -1; margin-right: 0; width: 100%; display: flex; justify-content: center; }
-  .hero-logo       { width: clamp(200px, 60vw, 280px); }
+  .hero-visual     { order: -1; margin-right: 0; width: 100%; display: flex; justify-content: center; align-items: center; }
+  .hero-logo       { width: clamp(200px, 65vw, 280px); display: block; margin: 0 auto; }
+  .hero-actions    { flex-wrap: nowrap; justify-content: center; gap: .75rem; }
+  .hero-actions .btn { flex: 1; text-align: center; min-width: 0; font-size: .9rem; padding: .7rem .75rem; }
 
   .noticias-grid  { grid-template-columns: 1fr; }
   .parceiros-grid { grid-template-columns: 1fr; }
@@ -783,6 +785,7 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .membros-grid   { grid-template-columns: 1fr; }
   .galeria-grid   { grid-template-columns: 1fr; }
   .hero-actions .btn + .btn { margin-left: 0; }
+  .hero-actions { flex-wrap: nowrap; }
 }
 /* ── BANNER PROGRAMA +AMBTO ── */
 .programa-intro-grid {
