@@ -218,8 +218,10 @@ p:last-child { margin-bottom: 0; }
 .dashboard { background: var(--branco); padding-block: 4rem; }
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  max-width: 900px;
+  margin-inline: auto;
 }
 .stat-card {
   text-align: center;
