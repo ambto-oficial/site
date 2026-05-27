@@ -761,7 +761,8 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .hero .container { flex-direction: column; text-align: center; padding-top: 2rem; }
   .hero-content p  { margin-inline: auto; }
   .hero-actions    { justify-content: center; }
-  .hero-visual     { order: -1; }
+  .hero-visual     { order: -1; margin-right: 0; width: 100%; display: flex; justify-content: center; }
+  .hero-logo       { width: clamp(200px, 60vw, 280px); }
 
   .noticias-grid  { grid-template-columns: 1fr; }
   .parceiros-grid { grid-template-columns: 1fr; }
@@ -784,6 +785,13 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .hero-actions .btn + .btn { margin-left: 0; }
 }
 /* ── BANNER PROGRAMA +AMBTO ── */
+.programa-intro-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
 .programa-banner {
   width: 100%;
   background: #fff;
@@ -811,5 +819,9 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 @media (max-width: 768px) {
   .programa-banner img {
     max-height: 200px;
+  }
+  .programa-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
