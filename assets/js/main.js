@@ -160,7 +160,7 @@ document.querySelectorAll('#footerYear').forEach(el => {
       : `<div class="noticia-card-img-placeholder">📰</div>`;
 
     const link = n.link
-      ? `<a href="${n.link}" class="noticia-card-link">Leia mais</a>`
+      ? `<a href="${n.link}" class="noticia-card-link">Saiba mais</a>`
       : '';
 
     return `
@@ -175,10 +175,29 @@ document.querySelectorAll('#footerYear').forEach(el => {
       </div>`;
   }
 
-  // Home: 3 mais recentes
+  // Home: 3 mais recentes (resumo truncado + "Leia mais" → noticias.html)
   const homeGrid = document.getElementById('homeNoticias');
   if (homeGrid) {
-    homeGrid.innerHTML = sorted.slice(0, 3).map(criarCard).join('');
+    homeGrid.innerHTML = sorted.slice(0, 3).map(n => {
+      const limit = 160;
+      const plain = n.resumo.replace(/<[^>]+>/g, '');
+      const resumoCurto = plain.length > limit ? plain.slice(0, limit).replace(/\s+\S*$/, '') + '…' : plain;
+      const href = n.link || 'noticias.html';
+      const linkLabel = n.link ? 'Saiba mais' : 'Leia mais';
+      const img = n.imagem
+        ? `<img src="${n.imagem}" alt="${n.titulo}" class="noticia-card-img" loading="lazy" />`
+        : `<div class="noticia-card-img-placeholder">📰</div>`;
+      return `
+        <div class="noticia-card">
+          ${img}
+          <div class="noticia-card-body">
+            <div class="noticia-card-date">${formatarData(n.data)}</div>
+            <h3>${n.titulo}</h3>
+            <p>${resumoCurto}</p>
+            <a href="${href}" class="noticia-card-link">${linkLabel}</a>
+          </div>
+        </div>`;
+    }).join('');
   }
 
   // Página de notícias
@@ -192,22 +211,26 @@ document.querySelectorAll('#footerYear').forEach(el => {
   const destaqueEl = document.getElementById('noticiaDestaque');
   const destaqueItem = sorted.find(n => n.destaque) || sorted[0];
   if (destaqueEl && destaqueItem) {
+    const legenda = destaqueItem.legenda
+      ? `<p style="font-size:.72rem;color:var(--cinza-claro);margin:.4rem 0 0;line-height:1.4;font-style:italic">${destaqueItem.legenda}</p>`
+      : '';
     const img = destaqueItem.imagem
-      ? `<img src="${destaqueItem.imagem}" alt="${destaqueItem.titulo}" style="width:100%;max-height:360px;object-fit:cover;border-radius:var(--raio-lg)" loading="lazy" />`
+      ? `<div style="margin:1rem 0 .25rem">
+           <img src="${destaqueItem.imagem}" alt="${destaqueItem.titulo}" style="width:100%;max-height:380px;object-fit:cover;border-radius:var(--raio)" loading="lazy" />
+           ${legenda}
+         </div>`
       : '';
     const lnk = destaqueItem.link
-      ? `<a href="${destaqueItem.link}" class="btn btn-primary btn-sm" style="margin-top:1rem">Saiba mais</a>` : '';
+      ? `<a href="${destaqueItem.link}" class="btn btn-primary btn-sm" style="margin-top:1rem;align-self:flex-start">Saiba mais</a>` : '';
 
     destaqueEl.innerHTML = `
-      <div style="background:var(--branco);border-radius:var(--raio-lg);overflow:hidden;box-shadow:var(--sombra);display:grid;grid-template-columns:1.4fr 1fr;gap:0">
-        ${img ? `<div>${img}</div>` : ''}
-        <div style="padding:2.5rem;display:flex;flex-direction:column;justify-content:center;${!img ? 'grid-column:1/-1' : ''}">
-          <span style="font-size:.75rem;font-weight:700;font-family:var(--fonte-heading);text-transform:uppercase;letter-spacing:.1em;color:var(--verde-folha);margin-bottom:.5rem">⭐ Destaque</span>
-          <div style="font-size:.82rem;color:var(--cinza-claro);margin-bottom:.5rem">${formatarData(destaqueItem.data)}</div>
-          <h2 style="font-size:1.4rem;margin-bottom:.75rem">${destaqueItem.titulo}</h2>
-          <p style="color:var(--cinza-medio)">${destaqueItem.resumo}</p>
-          ${lnk}
-        </div>
+      <div style="background:var(--branco);border-radius:var(--raio-lg);padding:2rem 2.5rem 2.5rem;box-shadow:var(--sombra);display:flex;flex-direction:column">
+        <span style="font-size:.75rem;font-weight:700;font-family:var(--fonte-heading);text-transform:uppercase;letter-spacing:.1em;color:var(--verde-folha);margin-bottom:.4rem">⭐ Destaque</span>
+        <div style="font-size:.82rem;color:var(--cinza-claro);margin-bottom:.5rem">${formatarData(destaqueItem.data)}</div>
+        <h2 style="font-size:1.4rem;margin-bottom:0">${destaqueItem.titulo}</h2>
+        ${img}
+        <p style="color:var(--cinza-medio);margin-top:.75rem;text-align:justify">${destaqueItem.resumo}</p>
+        ${lnk}
       </div>`;
   }
 

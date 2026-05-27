@@ -10,33 +10,35 @@
  *   data     : string  — Formato AAAA-MM-DD (ex: "2026-05-01")
  *   resumo   : string  — Texto breve para o card
  *   imagem   : string  — Caminho da imagem (ou "" para placeholder)
+ *   legenda  : string  — Legenda da foto exibida no destaque (opcional)
  *   link     : string  — URL completa se notícia tiver página própria; caso contrário ""
  *   destaque : boolean — true = notícia em destaque no topo da página
  */
 
 const AMBTO_NOTICIAS = [
   {
-    titulo: "AMBTO completa 25 anos com lançamento do Programa +AMBTO",
-    data: "2025-05-31",
-    resumo: "No dia 31 de maio de 2025, a Associação dos Engenheiros Ambientais do Estado do Tocantins completou 25 anos de história com o lançamento oficial do Programa de Benefícios +AMBTO, reunindo 11 parceiros.",
-    imagem: "",
+    titulo: "AMBTO e ASCAM articulam realização da segunda edição do Fórum de Regularização Ambiental junto ao Governo do Estado",
+    data: "2026-05-27",
+    resumo: "A <strong>AMBTO</strong>, juntamente com a ASCAM - Associação dos Consultores Ambientais do Tocantins, está articulando junto ao Governo do Estado a realização da segunda edição do Fórum Estadual de Regularização Ambiental. O intuito da <strong>AMBTO</strong> é promover o alinhamento e a atualização técnica entre profissionais e as instituições responsáveis pela gestão ambiental do Estado, especialmente o Naturatins, diante de um cenário de constantes atualizações normativas, procedimentais e operacionais que vêm sendo implementadas, assim como promover o debate técnico regional frente às diversas discussões nacionais relacionadas às mudanças no licenciamento ambiental. A primeira edição do evento foi considerada um sucesso de público. Embora o Naturatins já tenha sinalizado interesse em colaborar com sua realização, o evento ainda não tem data definida para acontecer.",
+    imagem: "assets/images/noticias/forum-regularizacao-ambiental-1ed.jpg",
+    legenda: "Registro da primeira edição do evento realizado no Auditório do Palácio Araguaia em 4 de abril de 2025 - Foto: Aldemar Ribeiro/Governo do Tocantins",
     link: "",
     destaque: true
   },
   {
-    titulo: "Novos parceiros no Programa +AMBTO",
-    data: "2025-06-10",
-    resumo: "O Programa +AMBTO conta agora com 11 estabelecimentos conveniados em Palmas, abrangendo categorias como alimentação, saúde, educação, automotivo, marketing digital e finanças.",
-    imagem: "",
-    link: "programa.html",
+    titulo: "AMBTO completa 25 anos com lançamento do Programa +AMBTO",
+    data: "2025-05-31",
+    resumo: "No dia 31 de maio de 2025, a Associação dos Engenheiros Ambientais do Estado do Tocantins completou 25 anos de história, promovendo uma feijoada para reunir associados, amigos e demais convidados para celebrar a data. O evento foi realizado na sede da AEATO - Associação dos Engenheiros Agrônomos do Tocantins e reuniu cerca de 170 pessoas, entre associados, familiares e amigos. Durante o evento, o presidente Tiago Sodré também anunciou o lançamento oficial do Programa de Benefícios +AMBTO, que visa conceder benefícios exclusivos para os associados adimplentes nos mais diversos segmentos, reunindo 11 parceiros.",
+    imagem: "assets/images/noticias/destaque-25anos-ambto.jpg",
+    link: "",
     destaque: false
   },
   {
-    titulo: "AMBTO convoca associados para assembleia geral",
-    data: "2025-04-15",
-    resumo: "A AMBTO convoca todos os associados para a Assembleia Geral Ordinária a ser realizada em Palmas. Pauta inclui prestação de contas e eleição de nova diretoria.",
-    imagem: "",
-    link: "",
+    titulo: "Novos parceiros no Programa +AMBTO",
+    data: "2025-06-02",
+    resumo: "O Programa +AMBTO conta agora com 11 estabelecimentos conveniados em Palmas, abrangendo categorias como alimentação, saúde, educação, automotivo, marketing digital e finanças.",
+    imagem: "assets/images/noticias/destaque-programa-ambto.jpg",
+    link: "programa.html",
     destaque: false
-  }
+  },
 ];
