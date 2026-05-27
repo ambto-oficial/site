@@ -13,7 +13,7 @@ const AMBTO_NUM_ASSOCIADOS = 300;
 // URLs dos Google Apps Script Web Apps
 // Substitua pelas URLs reais após publicar os scripts
 const GAS_URLS = {
-  associado:   'https://script.google.com/macros/s/AKfycbwAQX6wsY1Jl3Ro77quqrXgSpECVHoayGp2pr9G1Z86yT3mhYPLPZjgqVKc9ARQ6uKw/exec',
+  associado:   'https://script.google.com/macros/s/AKfycbzGxRXz-zAUeAS6H6BrD3M9Kl7g3XpwxNjpcsvLjHzHvsXBxyXpK2QMHFbVLuLGeyDI/exec',
   carteirinha: 'https://script.google.com/macros/s/AKfycbw7C-xT-hYNrNk1S0PMVCZpVp9IqLvXmTsi6_y5ovgZcKSsNu1DO5BN-NGOnslK5TZVfA/exec',
   contato:     'https://script.google.com/macros/s/AKfycbzfVYofzAQ5hDkW7f-DV5T1v6vWMHF182ZkvMgTWdgLL1W73Yi1-xIQ1xgGfQo7wUyU/exec'
 };
