@@ -18,10 +18,10 @@
 const AMBTO_NOTICIAS = [
   {
     titulo: "Decreto nº 7.184/2026 institui o PCMA e abre nova frente de atuação para engenheiros ambientais no Tocantins",
-    data: "2026-06-22",
+    data: "2026-06-29",
     resumo: "O Governo do Tocantins publicou o Decreto nº 7.184/2026, regulamentando a Lei nº 1.325/2002 e instituindo o Programa Estadual de Conversão de Multas Ambientais (PCMA). O mecanismo permite converter multas ambientais simples em bens ou serviços para recuperação ambiental, com descontos de até 60%. A elaboração de projetos na modalidade direta exige responsável técnico com CTF e ART — abrindo importante frente de atuação para o engenheiro ambiental. A <strong>AMBTO</strong> preparou materiais exclusivos sobre o tema.",
-    imagem: "",
-    legenda: "",
+    imagem: "assets/images/noticias/decreto-pcma-7184-2026.jpg",
+    legenda: "Decreto Estadual nº 7.184/2026 regulamenta a conversão de multas ambientais no Tocantins",
     link: "decreto-pcma-7184-2026.html",
     destaque: true
   },
