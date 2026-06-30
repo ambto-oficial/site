@@ -178,7 +178,7 @@ document.querySelectorAll('#footerYear').forEach(el => {
   // Home: 3 mais recentes (resumo truncado + "Leia mais" → noticias.html)
   const homeGrid = document.getElementById('homeNoticias');
   if (homeGrid) {
-    homeGrid.innerHTML = sorted.slice(0, 3).map(n => {
+    homeGrid.innerHTML = sorted.slice(0, 3).reverse().map(n => {
       const limit = 160;
       const plain = n.resumo.replace(/<[^>]+>/g, '');
       const resumoCurto = plain.length > limit ? plain.slice(0, limit).replace(/\s+\S*$/, '') + '…' : plain;
@@ -234,8 +234,8 @@ document.querySelectorAll('#footerYear').forEach(el => {
       </div>`;
   }
 
-  // Grid paginado (excluindo destaque)
-  const semDestaque = sorted.filter(n => n !== destaqueItem);
+  // Grid paginado (excluindo destaque) — ordem cronológica (mais antiga primeiro)
+  const semDestaque = sorted.filter(n => n !== destaqueItem).reverse();
 
   function renderPage() {
     const slice = semDestaque.slice(0, currentPage * PER_PAGE);
