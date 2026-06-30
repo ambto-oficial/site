@@ -18,7 +18,7 @@
 const AMBTO_NOTICIAS = [
   {
     titulo: "AMBTO lança guia técnico sobre o Programa Estadual de Conversão de Multas Ambientais",
-    data: "2026-06-29",
+    data: "2026-06-30",
     resumo: "A <strong>AMBTO</strong> disponibiliza gratuitamente o Guia Técnico do PCMA — material exclusivo que explica como funciona o Programa Estadual de Conversão de Multas Ambientais, quais os requisitos técnicos, prazos, modalidades e descontos previstos no Decreto nº 7.184/2026. Baixe o PDF e o infográfico.",
     imagem: "assets/images/noticias/guia-ambto-pcma.png",
     legenda: "Guia Técnico do PCMA produzido pela AMBTO",
