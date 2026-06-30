@@ -17,6 +17,15 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "AMBTO lança guia técnico sobre o Programa Estadual de Conversão de Multas Ambientais",
+    data: "2026-06-29",
+    resumo: "A <strong>AMBTO</strong> disponibiliza gratuitamente o Guia Técnico do PCMA — material exclusivo que explica como funciona o Programa Estadual de Conversão de Multas Ambientais, quais os requisitos técnicos, prazos, modalidades e descontos previstos no Decreto nº 7.184/2026. Baixe o PDF e o infográfico.",
+    imagem: "assets/images/noticias/guia-ambto-pcma.png",
+    legenda: "Guia Técnico do PCMA produzido pela AMBTO",
+    link: "guia-tecnico-pcma-ambto.html",
+    destaque: false
+  },
+  {
     titulo: "Com apoio da AMBTO, 2º Fórum Estadual de Regularização Ambiental é realizado em Palmas",
     data: "2026-07-25",
     resumo: "A segunda edição do Fórum Estadual de Regularização Ambiental reuniu profissionais, consultores e representantes do setor produtivo no auditório do Palácio Araguaia, em Palmas. O evento, organizado pelo Naturatins, <strong>AMBTO</strong> e ASCAM-TO, debateu os desdobramentos da 1ª edição e apresentou três novas Instruções Normativas do Naturatins sobre licenciamento e autorizações ambientais.",
