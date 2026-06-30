@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Decreto nº 7.184/2026 institui o PCMA e abre nova frente de atuação para engenheiros ambientais no Tocantins",
+    data: "2026-06-22",
+    resumo: "O Governo do Tocantins publicou o Decreto nº 7.184/2026, regulamentando a Lei nº 1.325/2002 e instituindo o Programa Estadual de Conversão de Multas Ambientais (PCMA). O mecanismo permite converter multas ambientais simples em bens ou serviços para recuperação ambiental, com descontos de até 60%. A elaboração de projetos na modalidade direta exige responsável técnico com CTF e ART — abrindo importante frente de atuação para o engenheiro ambiental. A <strong>AMBTO</strong> preparou materiais exclusivos sobre o tema.",
+    imagem: "",
+    legenda: "",
+    link: "decreto-pcma-7184-2026.html",
+    destaque: true
+  },
+  {
     titulo: "AMBTO e ASCAM articulam realização da segunda edição do Fórum de Regularização Ambiental junto ao Governo do Estado",
     data: "2026-05-27",
     resumo: "A <strong>AMBTO</strong>, juntamente com a ASCAM - Associação dos Consultores Ambientais do Tocantins, está articulando junto ao Governo do Estado a realização da segunda edição do Fórum Estadual de Regularização Ambiental. O intuito da <strong>AMBTO</strong> é promover o alinhamento e a atualização técnica entre profissionais e as instituições responsáveis pela gestão ambiental do Estado, especialmente o Naturatins, diante de um cenário de constantes atualizações normativas, procedimentais e operacionais que vêm sendo implementadas, assim como promover o debate técnico regional frente às diversas discussões nacionais relacionadas às mudanças no licenciamento ambiental. A primeira edição do evento foi considerada um sucesso de público. Embora o Naturatins já tenha sinalizado interesse em colaborar com sua realização, o evento ainda não tem data definida para acontecer.",
     imagem: "assets/images/noticias/forum-regularizacao-ambiental-1ed.jpg",
     legenda: "Registro da primeira edição do evento realizado no Auditório do Palácio Araguaia em 4 de abril de 2025 - Foto: Aldemar Ribeiro/Governo do Tocantins",
     link: "",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "AMBTO completa 25 anos com lançamento do Programa +AMBTO",
