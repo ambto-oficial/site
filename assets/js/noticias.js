@@ -17,6 +17,15 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Com apoio da AMBTO, 2º Fórum Estadual de Regularização Ambiental é realizado em Palmas",
+    data: "2026-07-25",
+    resumo: "A segunda edição do Fórum Estadual de Regularização Ambiental reuniu profissionais, consultores e representantes do setor produtivo no auditório do Palácio Araguaia, em Palmas. O evento, organizado pelo Naturatins, <strong>AMBTO</strong> e ASCAM-TO, debateu os desdobramentos da 1ª edição e apresentou três novas Instruções Normativas do Naturatins sobre licenciamento e autorizações ambientais.",
+    imagem: "assets/images/noticias/2forum-regularizacao-ambiental.jpeg",
+    legenda: "2º Fórum Estadual de Regularização Ambiental realizado no Auditório do Palácio Araguaia, em Palmas (TO)",
+    link: "forum-regularizacao-ambiental-2ed-2026.html",
+    destaque: false
+  },
+  {
     titulo: "Decreto nº 7.184/2026 institui o PCMA e abre nova frente de atuação para engenheiros ambientais no Tocantins",
     data: "2026-06-29",
     resumo: "O Governo do Tocantins publicou o Decreto nº 7.184/2026, regulamentando a Lei nº 1.325/2002 e instituindo o Programa Estadual de Conversão de Multas Ambientais (PCMA). O mecanismo permite converter multas ambientais simples em bens ou serviços para recuperação ambiental, com descontos de até 60%. A elaboração de projetos na modalidade direta exige responsável técnico com CTF e ART — abrindo importante frente de atuação para o engenheiro ambiental. A <strong>AMBTO</strong> preparou materiais exclusivos sobre o tema.",
