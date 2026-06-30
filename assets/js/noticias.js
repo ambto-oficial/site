@@ -27,7 +27,7 @@ const AMBTO_NOTICIAS = [
   },
   {
     titulo: "Com apoio da AMBTO, 2º Fórum Estadual de Regularização Ambiental é realizado em Palmas",
-    data: "2026-07-25",
+    data: "2026-06-25",
     resumo: "A segunda edição do Fórum Estadual de Regularização Ambiental reuniu profissionais, consultores e representantes do setor produtivo no auditório do Palácio Araguaia, em Palmas. O evento, organizado pelo Naturatins, <strong>AMBTO</strong> e ASCAM-TO, debateu os desdobramentos da 1ª edição e apresentou três novas Instruções Normativas do Naturatins sobre licenciamento e autorizações ambientais.",
     imagem: "assets/images/noticias/2forum-regularizacao-ambiental.jpeg",
     legenda: "2º Fórum Estadual de Regularização Ambiental realizado no Auditório do Palácio Araguaia, em Palmas (TO)",
