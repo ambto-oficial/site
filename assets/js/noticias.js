@@ -17,6 +17,24 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Governo publica lei que atualiza o licenciamento ambiental no Tocantins",
+    data: "2026-07-03",
+    resumo: "O Governo do Tocantins publicou a <strong>Lei nº 5.062/2026</strong>, que moderniza o licenciamento ambiental estadual e o alinha à Lei Federal nº 15.190/2025. A nova norma cria a <strong>Licença Ambiental Única (LAU)</strong>, o <strong>Licenciamento por Adesão e Compromisso (LAC)</strong> e a <strong>Licença de Operação Corretiva (LOC)</strong>, simplifica procedimentos e amplia o campo de atuação dos engenheiros ambientais no Estado.",
+    imagem: "assets/images/noticias/licenciamento-ambiental-to.png",
+    legenda: "Nova lei moderniza o licenciamento ambiental no Tocantins — Foto: Governo do Tocantins/Naturatins",
+    link: "nova-lei-licenciamento-ambiental-tocantins-2026.html",
+    destaque: false
+  },
+  {
+    titulo: "Fred Anders e o Time da União contam com o apoio da AMBTO nas Eleições 2026 do Sistema Confea/Crea",
+    data: "2026-07-01",
+    resumo: "A <strong>AMBTO</strong> declara apoio à chapa <strong>Time da União</strong> e ao engenheiro ambiental <strong>Fred Anders</strong>, candidato à presidência do CREA-TO. As eleições acontecem em <strong>3 de julho de 2026</strong>, das 8h às 19h, <strong>100% online</strong>. Saiba como votar e confira as orientações para o dia.",
+    imagem: "assets/images/noticias/time-da-uniao.jpeg",
+    legenda: "Time da União — Eleições 2026 do Sistema Confea/Crea e Mútua",
+    link: "eleicoes-2026-confea-crea-time-da-uniao.html",
+    destaque: false
+  },
+  {
     titulo: "AMBTO lança guia técnico sobre o Programa Estadual de Conversão de Multas Ambientais",
     data: "2026-06-30",
     resumo: "A <strong>AMBTO</strong> disponibiliza gratuitamente o Guia Técnico do PCMA — material exclusivo que explica como funciona o Programa Estadual de Conversão de Multas Ambientais, quais os requisitos técnicos, prazos, modalidades e descontos previstos no Decreto nº 7.184/2026. Baixe o PDF e o infográfico.",
