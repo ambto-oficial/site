@@ -26,15 +26,6 @@ const AMBTO_NOTICIAS = [
     destaque: false
   },
   {
-    titulo: "Fred Anders e o Time da União contam com o apoio da AMBTO nas Eleições 2026 do Sistema Confea/Crea",
-    data: "2026-07-01",
-    resumo: "A <strong>AMBTO</strong> declara apoio à chapa <strong>Time da União</strong> e ao engenheiro ambiental <strong>Fred Anders</strong>, candidato à presidência do CREA-TO. As eleições acontecem em <strong>3 de julho de 2026</strong>, das 8h às 19h, <strong>100% online</strong>. Saiba como votar e confira as orientações para o dia.",
-    imagem: "assets/images/noticias/time-da-uniao.jpeg",
-    legenda: "Time da União — Eleições 2026 do Sistema Confea/Crea e Mútua",
-    link: "eleicoes-2026-confea-crea-time-da-uniao.html",
-    destaque: false
-  },
-  {
     titulo: "AMBTO lança guia técnico sobre o Programa Estadual de Conversão de Multas Ambientais",
     data: "2026-06-30",
     resumo: "A <strong>AMBTO</strong> disponibiliza gratuitamente o Guia Técnico do PCMA — material exclusivo que explica como funciona o Programa Estadual de Conversão de Multas Ambientais, quais os requisitos técnicos, prazos, modalidades e descontos previstos no Decreto nº 7.184/2026. Baixe o PDF e o infográfico.",
