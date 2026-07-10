@@ -17,6 +17,32 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Naturatins planeja inspeções técnicas para 434 barragens sem classificação em Tocantins",
+    data: "2026-07-10",
+    resumo: "<strong>Naturatins</strong> divulga plano de ação em resposta ao relatório de segurança de barragens: 434 estruturas sem classificação técnica no Tocantins, 178 em <strong>Categoria de Risco ALTO</strong>, com vistorias programadas e penalidades já aplicadas em duas barragens.",
+    imagem: "assets/images/noticias/barragens-naturatins-2026.jpeg",
+    legenda: "Barragem no Tocantins — foco do plano de fiscalização do Naturatins",
+    link: "naturatins-barragens-risco-plano-inspeccoes-2026.html",
+    destaque: true
+  },
+  {
+    titulo: "Naturatins divulga entidades habilitadas para Conselho Gestor da APA Serra do Lajeado",
+    data: "2026-07-10",
+    resumo: "O Instituto Natureza do Tocantins (Naturatins) divulgou, no Diário Oficial do Estado, a relação final das entidades habilitadas para integrar o Conselho Gestor da <strong>Área de Proteção Ambiental (APA) Serra do Lajeado</strong>, no biênio 2026/2028. A <strong>AMBTO</strong> foi habilitada entre as entidades da sociedade civil. O conselho reunirá representantes de órgãos públicos e organizações sociais para fortalecer a gestão participativa da unidade de conservação, promovendo ações de preservação ambiental e uso sustentável dos recursos naturais na região.",
+    imagem: "",
+    link: "",
+    destaque: false
+  },
+  {
+    titulo: "Ministério Público do Tocantins processa BRK Ambiental por poluição do ar na ETE Norte de Palmas",
+    data: "2026-07-10",
+    resumo: "O <strong>Ministério Público do Tocantins (MPTO)</strong> ajuizou ação judicial contra a <strong>BRK Ambiental</strong> por emissão de sulfeto de hidrogênio (H₂S) até 10 vezes acima do limite permitido na Estação de Tratamento de Esgoto (ETE) Norte em Palmas. A ação pede R$ 1 milhão de indenização por danos morais coletivos e medidas urgentes.",
+    imagem: "assets/images/noticias/etenorte-brk-ambiental.jpg",
+    legenda: "Estação de Tratamento de Esgoto (ETE) Norte, em Palmas - Fonte: BRK Ambiental",
+    link: "acao-mpto-brk-etenorte-palmas-2026.html",
+    destaque: false
+  },
+  {
     titulo: "Governo publica lei que atualiza o licenciamento ambiental no Tocantins",
     data: "2026-07-03",
     resumo: "O Governo do Tocantins publicou a <strong>Lei nº 5.062/2026</strong>, que moderniza o licenciamento ambiental estadual e o alinha à Lei Federal nº 15.190/2025. A nova norma cria a <strong>Licença Ambiental Única (LAU)</strong>, o <strong>Licenciamento por Adesão e Compromisso (LAC)</strong> e a <strong>Licença de Operação Corretiva (LOC)</strong>, simplifica procedimentos e amplia o campo de atuação dos engenheiros ambientais no Estado.",
@@ -50,7 +76,7 @@ const AMBTO_NOTICIAS = [
     imagem: "assets/images/noticias/decreto-pcma-7184-2026.jpg",
     legenda: "Decreto Estadual nº 7.184/2026 regulamenta a conversão de multas ambientais no Tocantins",
     link: "decreto-pcma-7184-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "AMBTO e ASCAM articulam realização da segunda edição do Fórum de Regularização Ambiental junto ao Governo do Estado",
