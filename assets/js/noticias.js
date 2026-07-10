@@ -17,21 +17,13 @@
 
 const AMBTO_NOTICIAS = [
   {
-    titulo: "Naturatins planeja inspeções técnicas para 434 barragens sem classificação em Tocantins",
-    data: "2026-07-10",
-    resumo: "<strong>Naturatins</strong> divulga plano de ação em resposta ao relatório de segurança de barragens: 434 estruturas sem classificação técnica no Tocantins, 178 em <strong>Categoria de Risco ALTO</strong>, com vistorias programadas e penalidades já aplicadas em duas barragens.",
-    imagem: "assets/images/noticias/barragens-naturatins-2026.jpeg",
-    legenda: "Barragem no Tocantins — foco do plano de fiscalização do Naturatins",
-    link: "naturatins-barragens-risco-plano-inspeccoes-2026.html",
-    destaque: true
-  },
-  {
     titulo: "Naturatins divulga entidades habilitadas para Conselho Gestor da APA Serra do Lajeado",
     data: "2026-07-10",
     resumo: "O Instituto Natureza do Tocantins (Naturatins) divulgou, no Diário Oficial do Estado, a relação final das entidades habilitadas para integrar o Conselho Gestor da <strong>Área de Proteção Ambiental (APA) Serra do Lajeado</strong>, no biênio 2026/2028. A <strong>AMBTO</strong> foi habilitada entre as entidades da sociedade civil. O conselho reunirá representantes de órgãos públicos e organizações sociais para fortalecer a gestão participativa da unidade de conservação, promovendo ações de preservação ambiental e uso sustentável dos recursos naturais na região.",
-    imagem: "",
+    imagem: "assets/images/noticias/apa-serra-lajeado.jpg",
+    legenda: "Área de Proteção Ambiental (APA) Serra do Lajeado, no Tocantins",
     link: "",
-    destaque: false
+    destaque: true
   },
   {
     titulo: "Ministério Público do Tocantins processa BRK Ambiental por poluição do ar na ETE Norte de Palmas",
