@@ -19,9 +19,9 @@ const AMBTO_NOTICIAS = [
   {
     titulo: "Naturatins divulga entidades habilitadas para Conselho Gestor da APA Serra do Lajeado",
     data: "2026-07-10",
-    resumo: "O Instituto Natureza do Tocantins (Naturatins) divulgou, no Diário Oficial do Estado, a relação final das entidades habilitadas para integrar o Conselho Gestor da <strong>Área de Proteção Ambiental (APA) Serra do Lajeado</strong>, no biênio 2026/2028. A <strong>AMBTO</strong> foi habilitada entre as entidades da sociedade civil. O conselho reunirá representantes de órgãos públicos e organizações sociais para fortalecer a gestão participativa da unidade de conservação, promovendo ações de preservação ambiental e uso sustentável dos recursos naturais na região.",
+    resumo: "O Instituto Natureza do Tocantins (Naturatins) divulgou, no Diário Oficial do Estado - edição nº 7.096, de 8 de julho de 2026, a relação final das entidades habilitadas para integrar o Conselho Gestor da <strong>Área de Proteção Ambiental (APA) Serra do Lajeado</strong>, no biênio 2026/2028. A <strong>AMBTO</strong> foi habilitada entre as entidades da sociedade civil. O Conselho reunirá representantes de órgãos públicos e organizações sociais para fortalecer a gestão participativa da unidade de conservação, promovendo ações de preservação ambiental e uso sustentável dos recursos naturais na região.",
     imagem: "assets/images/noticias/apa-serra-lajeado.jpg",
-    legenda: "Área de Proteção Ambiental (APA) Serra do Lajeado, no Tocantins",
+    legenda: "Área de Proteção Ambiental (APA) Serra do Lajeado, no Tocantins - Fonte: Tocantins Rural",
     link: "",
     destaque: true
   },
