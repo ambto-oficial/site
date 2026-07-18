@@ -170,6 +170,53 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
+
+    .artigo-cta {
+      background: var(--verde);
+      border-radius: var(--raio-lg);
+      padding: 2rem 2.5rem;
+      margin: 2.5rem 0 1rem;
+      text-align: center;
+      color: var(--branco);
+    }
+    .artigo-cta h3 {
+      color: var(--branco);
+      margin-bottom: .5rem;
+      font-size: 1.1rem;
+    }
+    .artigo-cta p {
+      color: rgba(255,255,255,.85);
+      font-size: .92rem;
+      margin-bottom: 1.25rem;
+      text-align: center !important;
+    }
+    .artigo-cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-cta-artigo {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--branco);
+      color: var(--verde);
+      font-weight: 700;
+      font-family: var(--fonte-heading);
+      font-size: .88rem;
+      padding: .7rem 1.4rem;
+      border-radius: var(--raio);
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-cta-artigo:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    }
+    @media (max-width: 600px) {
+      .artigo-cta { padding: 1.5rem 1.25rem; }
+    }
   </style>
 </head>
 <body>
@@ -278,6 +325,17 @@
           <h2>Importância da Fiscalização Técnica</h2>
 
           <p>A segurança de barragens é tema de alta relevância para a engenharia ambiental. Estruturas hidráulicas não monitoradas representam risco potencial não apenas aos reservatórios e usuários diretos (abastecimento, irrigação), mas também aos ecossistemas aquáticos, solos de jusante e população em geral. Concentrar a maior malha de barragens do Norte sem a equipe técnica proporcional exige que o Estado priorize investimento em pessoal e em sistemas de gestão, sob pena de comprometer a capacidade de resposta a eventos como os registrados em 2025.</p>
+
+          <!-- ── CTA ── -->
+          <div class="artigo-cta">
+            <h3>📄 Quer conferir os dados na íntegra?</h3>
+            <p>Baixe o Relatório de Segurança de Barragens 2026 completo, publicado pela ANA, com todos os dados citados nesta matéria.</p>
+            <div class="artigo-cta-buttons">
+              <a href="../assets/docs/relatorio-ana-rsb-2026_compressed.pdf" target="_blank" rel="noopener" class="btn-cta-artigo">
+                📘 Baixar Relatório RSB 2026 (PDF, 18 MB)
+              </a>
+            </div>
+          </div>
 
           <h2>Nota Institucional</h2>
 
