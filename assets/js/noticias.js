@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Tocantins lidera em barragens no Norte, mas fiscalização opera com 5 de 20 técnicos recomendados",
+    data: "2026-07-18",
+    resumo: "O <strong>Relatório de Segurança de Barragens 2026</strong>, da ANA, revela que o Tocantins concentra 1.195 barragens cadastradas no <strong>SNISB</strong> — cerca de 39% de toda a Região Norte — mas o Naturatins conta com apenas 5 técnicos em dedicação exclusiva, quando o recomendado para esse volume é de 20.",
+    imagem: "assets/images/noticias/barragens-naturatins-2026.jpeg",
+    legenda: "Barragem no Tocantins — estado lidera o número de barragens cadastradas na Região Norte",
+    link: "noticias/naturatins-barragens-risco-plano-inspeccoes-2026.html",
+    destaque: true
+  },
+  {
     titulo: "Amazônia reduz desmatamento para menor nível em uma década, mas Tocantins segue como segundo maior deforestador do Cerrado no 1º semestre",
     data: "2026-07-18",
     resumo: "A Amazônia registrou a menor área com sinais de desmatamento detectados por satélite em uma década no primeiro semestre de 2026, com redução de 38% ante 2025, segundo o <strong>Inpe/Deter</strong>. Porém, o contraste se evidencia em biomas regionais: Tocantins concentra a segunda maior área sob alerta de desmatamento no Cerrado no mesmo período, com 825 km², atrás apenas de Maranhão.",
     imagem: "assets/images/noticias/area-desmatada-de-cerrado-no-tocantins.jpg",
     legenda: "Desmatamento no Cerrado: Tocantins registra alertas proporcionais durante o primeiro semestre de 2026 — Fonte: Inpe/Deter",
     link: "noticias/desmatamento-amazonia-cerrado-tocantins-1s-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Naturatins divulga entidades habilitadas para Conselho Gestor da APA Serra do Lajeado",
