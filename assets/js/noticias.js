@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Palmas regulamenta Programa Bolsa Catador com incentivo de R$ 1 mil mensal",
+    data: "2026-07-25",
+    resumo: "A Prefeitura de Palmas publicou o <strong>Decreto nº 2.960/2026</strong>, regulamentando o <strong>Programa Bolsa Catador</strong> e abrindo caminho para seleção de até 70 catadores de materiais recicláveis. O incentivo mensal é de <strong>R$ 1.000,00</strong>, pago via cartão corporativo, destinado a profissionais em situação de vulnerabilidade social.",
+    imagem: "assets/images/noticias/programa-bolsa-catador-palmas.png",
+    legenda: "Programa Bolsa Catador — Palmas (TO)",
+    link: "noticias/palmas-regulamenta-programa-bolsa-catador.html",
+    destaque: true
+  },
+  {
     titulo: "Tocantins lidera em barragens no Norte, mas fiscalização opera com 5 de 20 técnicos recomendados",
     data: "2026-07-18",
     resumo: "O <strong>Relatório de Segurança de Barragens 2026</strong>, da ANA, revela que o Tocantins concentra 1.195 barragens cadastradas no <strong>SNISB</strong> — cerca de 39% de toda a Região Norte — mas o Naturatins conta com apenas 5 técnicos em dedicação exclusiva, quando o recomendado para esse volume é de 20.",
     imagem: "assets/images/noticias/barragens-naturatins-2026.jpeg",
     legenda: "Barragem no Tocantins — estado lidera o número de barragens cadastradas na Região Norte",
     link: "noticias/naturatins-barragens-risco-plano-inspeccoes-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Amazônia reduz desmatamento para menor nível em uma década, mas Tocantins segue como segundo maior deforestador do Cerrado no 1º semestre",
