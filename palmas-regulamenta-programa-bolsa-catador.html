@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palmas regulamenta Programa Bolsa Catador com incentivo de R$ 1 mil mensal — AMBTO</title>
+  <meta name="description" content="A Prefeitura de Palmas publicou o Decreto nº 2.960/2026, regulamentando o Programa Bolsa Catador e abrindo caminho para seleção de até 70 catadores de materiais recicláveis com incentivo mensal de R$ 1.000,00." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <!-- Open Graph
+       NOTA: og:image apontará para programa-bolsa-catador-palmas-og.jpg após gerar versão otimizada.
+       Para gerar: execute o PowerShell script em scripts/generate-og-image.ps1 ou use Python/PIL
+       Imagem original PNG (1.8MB) é pesada para crawlers de preview. Versão -og.jpg deve ter ~150-250 KB.
+  -->
+  <meta property="og:title" content="Palmas regulamenta Programa Bolsa Catador com incentivo de R$ 1 mil mensal" />
+  <meta property="og:description" content="Decreto nº 2.960/2026 regulamenta programa de transferência de renda e incentivo a catadores de materiais recicláveis em situação de vulnerabilidade social no Município." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ambto.org.br/noticias/palmas-regulamenta-programa-bolsa-catador.html" />
+  <meta property="og:image" content="https://ambto.org.br/assets/images/noticias/programa-bolsa-catador-palmas-og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TN5VZJXFKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TN5VZJXFKW');
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    .artigo-container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .artigo-header { margin-bottom: 2rem; }
+    .artigo-header .tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 700;
+      font-family: var(--fonte-heading);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--verde-folha);
+      margin-bottom: .6rem;
+    }
+    .artigo-header h1 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      line-height: 1.3;
+      margin-bottom: .75rem;
+    }
+    .artigo-meta {
+      font-size: .82rem;
+      color: var(--cinza-claro);
+      margin-bottom: 1.5rem;
+    }
+    .artigo-body {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--cinza-escuro);
+    }
+    .artigo-body p { margin-bottom: 1.2rem; text-align: justify; }
+    .artigo-body h2 {
+      font-size: 1.15rem;
+      color: var(--verde);
+      margin: 2rem 0 .75rem;
+      padding-bottom: .4rem;
+      border-bottom: 2px solid var(--verde-claro);
+    }
+    .artigo-body strong { color: var(--cinza-escuro); }
+
+    /* Placeholder de imagem */
+    .img-placeholder {
+      width: 100%;
+      min-height: 280px;
+      background: linear-gradient(135deg, #1B4D2E 0%, #2E7D4F 100%);
+      border-radius: var(--raio-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.7);
+      font-size: .88rem;
+      margin-bottom: 2rem;
+      gap: .5rem;
+    }
+    .img-placeholder span { font-size: 2.5rem; }
+
+    /* Cards de modalidades */
+    .modalidades-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0 1.5rem;
+    }
+    .modalidade-card {
+      background: var(--verde-palido, #F1F8F3);
+      border: 1px solid var(--verde-claro);
+      border-top: 3px solid var(--verde);
+      border-radius: var(--raio);
+      padding: 1.1rem 1.25rem;
+    }
+    .modalidade-card .sigla {
+      font-size: 1.15rem;
+      font-weight: 900;
+      font-family: var(--fonte-heading);
+      color: var(--verde);
+      margin-bottom: .25rem;
+    }
+    .modalidade-card .nome {
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--cinza-escuro);
+      margin-bottom: .5rem;
+      line-height: 1.3;
+    }
+    .modalidade-card p {
+      font-size: .85rem;
+      color: var(--cinza-claro);
+      margin: 0 !important;
+      text-align: left !important;
+      line-height: 1.6;
+    }
+
+    .destaque-box {
+      background: linear-gradient(135deg, #f0f7f0 0%, #e8f5e8 100%);
+      border-left: 4px solid var(--verde-folha);
+      border-radius: 0 var(--raio) var(--raio) 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .destaque-box p { margin: 0; text-align: left !important; }
+
+    /* Lista com marcadores (checkmark) */
+    .artigo-body ul.lista-marcadores {
+      list-style: none;
+      margin: .5rem 0 1.2rem;
+      padding: 0;
+    }
+    .artigo-body ul.lista-marcadores li {
+      position: relative;
+      padding-left: 1.7rem;
+      margin-bottom: .7rem;
+      line-height: 1.7;
+      text-align: left;
+    }
+    .artigo-body ul.lista-marcadores li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: .05rem;
+      color: var(--verde-folha);
+      font-weight: 700;
+    }
+
+    .artigo-footer-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e0e8e0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../assets/images/logo-horizontal.png" alt="AMBTO" class="navbar-logo" />
+      </a>
+      <ul class="navbar-nav" id="navMenu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../sobre.html">Sobre</a></li>
+        <li><a href="../programa.html" class="btn-nav-cta">Programa +AMBTO</a></li>
+        <li><a href="../noticias.html" class="active">Notícias</a></li>
+        <li><a href="../galeria.html">Galeria</a></li>
+        <li><a href="../contato.html">Contato</a></li>
+      </ul>
+      <button class="navbar-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Notícias</h1>
+      <p>Fique por dentro dos eventos, comunicados e novidades da AMBTO</p>
+    </div>
+  </header>
+
+  <!-- ── ARTIGO ── -->
+  <section class="section">
+    <div class="container">
+      <div class="artigo-container">
+
+        <div class="artigo-header">
+          <span class="tag">Legislação · Políticas Públicas</span>
+          <h1>Palmas regulamenta Programa Bolsa Catador com incentivo de R$ 1 mil mensal</h1>
+          <div class="artigo-meta">25 de julho de 2026 &nbsp;·&nbsp; Por AMBTO</div>
+        </div>
+
+        <figure style="margin: 0 0 2rem; border-radius: var(--raio-lg); overflow: hidden;">
+          <img src="../assets/images/noticias/programa-bolsa-catador-palmas.jpg"
+               alt="Programa Bolsa Catador — Palmas (TO)"
+               style="width:100%; height:auto; display:block;" />
+        </figure>
+
+        <div class="artigo-body">
+
+          <p>A Prefeitura de Palmas publicou, na sexta-feira, 24 de julho de 2026, o <strong>Decreto nº 2.960</strong>, no <strong>Diário Oficial do Município (DOMP) nº 3.998</strong>, regulamentando o <strong>Programa Bolsa Catador</strong> instituído pela <strong>Lei Municipal nº 3.446, de 18 de junho de 2026</strong>. A medida abre o caminho para seleção e concessão de incentivo financeiro mensal a catadores de materiais recicláveis no Município.</p>
+
+          <h2>Estrutura do Programa</h2>
+
+          <p>O <strong>Programa Bolsa Catador</strong> oferece incentivo financeiro mensal de <strong>R$ 1.000,00</strong> para até 70 beneficiários. O repasse é efetuado por meio de <strong>cartão corporativo</strong>, de uso pessoal e intransferível, com vedação ao saque em espécie. O benefício deve ser utilizado exclusivamente para aquisição de itens essenciais — alimentação, combustível, equipamentos de proteção individual (EPIs) — ou outros bens e serviços que contribuam para o exercício regular da atividade de catação.</p>
+
+          <p>A <strong>Secretaria Municipal de Desenvolvimento Social (Sedes)</strong> é responsável pela gestão, operacionalização, acompanhamento e fiscalização do Programa.</p>
+
+          <h2>Público-alvo e requisitos</h2>
+
+          <p>Podem se inscrever catadores de materiais recicláveis que atendam, cumulativamente, aos seguintes requisitos:</p>
+
+          <ul class="lista-marcadores">
+            <li>Exercer a atividade de coleta, triagem, beneficiamento, enfardamento ou comercialização de materiais recicláveis no Município, de forma individual ou por meio de associação ou cooperativa;</li>
+            <li>Estar em situação de hipossuficiência, caracterizada por renda familiar mensal <strong>per capita igual ou inferior a 1/2 (meio) salário mínimo</strong>;</li>
+            <li>Possuir idade mínima de 18 anos ou ser legalmente emancipado;</li>
+            <li>Possuir Cadastro de Pessoa Física (CPF) regular e documento oficial de identificação;</li>
+            <li>Apresentar comprovante de residência no Município de Palmas.</li>
+          </ul>
+
+          <p>A comprovação de renda pode ser feita por extrato ou espelho cadastral atualizado do <strong>Cadastro Único para Programas Sociais (CadÚnico)</strong>, Carteira de Trabalho e Previdência Social (CTPS), contracheques, recibos de entrega de recicláveis, notas fiscais, comprovantes de pagamento por compradores ou declaração de composição familiar e renda. A ausência de inscrição no CadÚnico não impede a habilitação, desde que a condição de renda seja comprovada por outros meios idôneos.</p>
+
+          <h2>Critérios de seleção e priorização</h2>
+
+          <p>A seleção dos beneficiários observa <strong>critérios objetivos de priorização</strong>, em ordem hierárquica:</p>
+
+          <ol style="margin-bottom: 1.2rem; padding-left: 1.5rem; text-align: justify;">
+            <li style="margin-bottom: 0.6rem;">Menor renda familiar mensal <em>per capita</em>;</li>
+            <li style="margin-bottom: 0.6rem;">Maior tempo comprovado de exercício da atividade de catação no Município;</li>
+            <li style="margin-bottom: 0.6rem;">Ser mulher chefe de família, conforme registro no CadÚnico ou declaração validada;</li>
+            <li style="margin-bottom: 0.6rem;">Possuir pessoa com deficiência no núcleo familiar, ou ser a própria pessoa com deficiência;</li>
+            <li>Possuir comprovadamente criança, adolescente ou idoso no núcleo familiar.</li>
+          </ol>
+
+          <p>Persistindo empate após aplicação destes critérios, são adotadas, sucessivamente, condições de desempate: maior número de dependentes econômicos, maior idade do requerente e, por último, sorteio público com registro em ata e publicidade do resultado.</p>
+
+          <p>Cada benefício é limitado a <strong>até 2 beneficiários por núcleo familiar</strong>, evitando concentração de renda em uma única família.</p>
+
+          <h2>Processo de seleção</h2>
+
+          <p>A seleção dos beneficiários dar-se-á mediante <strong>chamamento público</strong>, observando os princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência. O processo compreenderá as seguintes fases:</p>
+
+          <ul class="lista-marcadores">
+            <li><strong>Inscrição e Habilitação</strong> — convocação pública dos interessados e recebimento da documentação comprobatória;</li>
+            <li><strong>Classificação e Julgamento</strong> — análise socioeconômica, validação documental e aplicação dos critérios de priorização;</li>
+            <li><strong>Recursal</strong> — prazo para impugnação e interposição de recursos administrativos;</li>
+            <li><strong>Homologação e Publicação</strong> — divulgação do resultado, convocação dos selecionados e formação de lista de espera.</li>
+          </ul>
+
+          <h2>Deveres dos beneficiários</h2>
+
+          <p>A permanência no Programa e o recebimento do incentivo mensal estão condicionados ao cumprimento de deveres:</p>
+
+          <ul class="lista-marcadores">
+            <li><strong>Manutenção da atividade</strong> — exercício regular da coleta, triagem, beneficiamento ou comercialização de materiais recicláveis;</li>
+            <li><strong>Atualização cadastral</strong> — comunicação tempestiva ao órgão gestor sobre alterações nos dados cadastrais ou socioeconômicos;</li>
+            <li><strong>Participação institucional</strong> — comparecimento a ações de educação ambiental, coleta seletiva, capacitações e recadastramentos periódicos conforme convocação da Sedes.</li>
+          </ul>
+
+          <h2>Penalidades e garantias</h2>
+
+          <p>O descumprimento dos requisitos de elegibilidade, perda superveniente desses requisitos ou constatação de fraude ensejam penalidades conforme a gravidade: <strong>suspensão</strong> (interrupção temporária do pagamento em casos de irregularidades sanáveis) ou <strong>cancelamento</strong> (exclusão definitiva por desligamento voluntário, perda de requisitos ou prestação de informações falsas).</p>
+
+          <p>A aplicação de penalidades é precedida de parecer técnico fundamentado e notificação formal, assegurando ao beneficiário o direito ao contraditório e à ampla defesa, com prazo de 10 dias úteis para interposição de recurso administrativo.</p>
+
+          <h2>Restrições e compatibilidade</h2>
+
+          <p>É vedada a acumulação da <strong>Bolsa Catador</strong> com outros benefícios municipais de natureza semelhante. Admite-se, porém, acumulação com benefícios estaduais e federais, desde que não exista vedação específica no programa de origem e sejam respeitados os requisitos de elegibilidade.</p>
+
+          <h2>Próximas etapas</h2>
+
+          <p>Conforme informado pela Prefeitura, o <strong>edital de chamamento público</strong> será publicado no Diário Oficial do Município para seleção e convocação dos beneficiários. Os interessados deverão acompanhar as publicações oficiais na página da Prefeitura e no DOMP.</p>
+
+          <div class="destaque-box">
+            <p>A <strong>AMBTO</strong> reconhece a importância do <strong>Programa Bolsa Catador</strong> como instrumento de proteção social e reconhecimento profissional dos catadores de materiais recicláveis — agentes fundamentais na cadeia de reciclagem e na economia circular. O programa alinha-se aos princípios da <strong>Lei nº 12.305/2010</strong> (Política Nacional de Resíduos Sólidos), que estabelece a inclusão socioeconômica de catadores como diretriz nacional. A Associação reafirma seu compromisso em acompanhar políticas públicas que fortaleçam a dignidade humana, a sustentabilidade ambiental e o profissionalismo dos engenheiros ambientais e dos agentes do setor de resíduos sólidos no Estado do Tocantins.</p>
+          </div>
+
+        </div><!-- /artigo-body -->
+
+        <div class="artigo-footer-nav">
+          <a href="../noticias.html" class="btn btn-outline" style="font-size:.88rem">← Voltar para Notícias</a>
+          <span style="font-size:.78rem;color:var(--cinza-claro)">AMBTO — Associação dos Engenheiros Ambientais do Tocantins</span>
+        </div>
+
+      </div><!-- /artigo-container -->
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">AMB<span>TO</span></div>
+          <p>Associação dos Engenheiros Ambientais<br>do Estado do Tocantins</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/ambto.oficial" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://youtube.com/@ambtooficial" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../sobre.html">Sobre a AMBTO</a></li>
+            <li><a href="../programa.html">Programa +AMBTO</a></li>
+            <li><a href="../noticias.html">Notícias</a></li>
+            <li><a href="../galeria.html">Galeria</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Institucional</h4>
+          <p>CNPJ: 06.207.186/0001-30</p>
+          <p>Fundada em 31 de maio de 2000</p>
+          <p>Palmas — Estado do Tocantins</p>
+          <p>📧 <a href="mailto:contatoambto@gmail.com">contatoambto@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem">
+        <span>© <span id="footerYear"></span> AMBTO — Todos os direitos reservados</span>
+        <span>Engenharia ambiental a serviço do Tocantins</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js?v=2"></script>
+</body>
+</html>
