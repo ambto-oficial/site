@@ -20,7 +20,7 @@ const AMBTO_NOTICIAS = [
     titulo: "Justiça determina recuperação de mais de 600 hectares de Cerrado desmatados irregularmente em Palmas",
     data: "2026-07-29",
     resumo: "Decisão judicial, em Ação Civil Pública movida pelo <strong>Ministério Público do Tocantins (MPTO)</strong>, condena proprietário rural a recuperar integralmente mais de <strong>600 hectares</strong> de Cerrado desmatados irregularmente na região de Palmas e a indenizar em 674 salários mínimos. O caso reforça que a compensação de Reserva Legal não pode viabilizar novos desmatamentos após o marco temporal do Código Florestal.",
-    imagem: "assets/images/noticias/fazenda-desmatada-palmas-600ha.png",
+    imagem: "assets/images/noticias/fazenda-desmatada-palmas-600ha.jpg",
     legenda: "Área de Cerrado desmatada irregularmente em propriedade rural de Palmas (TO)",
     link: "noticias/justica-recuperacao-600ha-cerrado-palmas.html",
     destaque: true
@@ -29,7 +29,7 @@ const AMBTO_NOTICIAS = [
     titulo: "Palmas regulamenta Programa Bolsa Catador com incentivo de R$ 1 mil mensal",
     data: "2026-07-25",
     resumo: "A Prefeitura de Palmas publicou o <strong>Decreto nº 2.960/2026</strong>, regulamentando o <strong>Programa Bolsa Catador</strong> e abrindo caminho para seleção de até 70 catadores de materiais recicláveis. O incentivo mensal é de <strong>R$ 1.000,00</strong>, pago via cartão corporativo, destinado a profissionais em situação de vulnerabilidade social.",
-    imagem: "assets/images/noticias/programa-bolsa-catador-palmas.png",
+    imagem: "assets/images/noticias/programa-bolsa-catador-palmas.jpg",
     legenda: "Programa Bolsa Catador — Palmas (TO)",
     link: "noticias/palmas-regulamenta-programa-bolsa-catador.html",
     destaque: false
