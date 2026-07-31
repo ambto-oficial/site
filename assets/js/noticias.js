@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Audiência pública em Araguaína abre a elaboração do Plano de Manejo da APA das Nascentes",
+    data: "2026-07-31",
+    resumo: "A primeira audiência pública do <strong>Plano de Manejo da APA das Nascentes de Araguaína</strong> acontece em <strong>11 de agosto</strong>, às 8h, no auditório do Sebrae. Fruto de convênio entre <strong>Naturatins</strong>, Prefeitura de Araguaína e <strong>IAC/UFT</strong>, o processo prevê 480 dias de trabalho, três rodadas de audiências e oficinas comunitárias nos três municípios da unidade. Acesse o Plano de Trabalho e o Plano de Comunicação e conheça o site exclusivo do projeto.",
+    imagem: "assets/images/noticias/apa-nascentes-araguaina-plano-manejo.jpg",
+    legenda: "APA das Nascentes de Araguaína, em área de transição entre o Cerrado e a Amazônia — Foto: Benilson Sousa/Governo do Tocantins",
+    link: "noticias/apa-nascentes-araguaina-plano-manejo-audiencia.html",
+    destaque: true
+  },
+  {
     titulo: "Justiça determina recuperação de mais de 600 hectares de Cerrado desmatados irregularmente em Palmas",
     data: "2026-07-29",
     resumo: "Decisão judicial, em Ação Civil Pública movida pelo <strong>Ministério Público do Tocantins (MPTO)</strong>, condena proprietário rural a recuperar integralmente mais de <strong>600 hectares</strong> de Cerrado desmatados irregularmente na região de Palmas e a indenizar em 674 salários mínimos. O caso reforça que a compensação de Reserva Legal não pode viabilizar novos desmatamentos após o marco temporal do Código Florestal.",
     imagem: "assets/images/noticias/fazenda-desmatada-palmas-600ha.jpg",
     legenda: "Área de Cerrado desmatada irregularmente em propriedade rural de Palmas (TO)",
     link: "noticias/justica-recuperacao-600ha-cerrado-palmas.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Palmas regulamenta Programa Bolsa Catador com incentivo de R$ 1 mil mensal",
