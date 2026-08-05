@@ -17,13 +17,31 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "845 mil proprietários rurais são notificados pelo Ministério da Gestão e da Inovação em Serviços Públicos para realizarem a validação das informações do Cadastro Ambiental Rural",
+    data: "2026-08-04",
+    resumo: "O Ministério da Gestão e da Inovação em Serviços Públicos (<strong>MGI</strong>) enviou <strong>mais de 845 mil notificações</strong> a proprietários rurais para completar a validação do <strong>Cadastro Ambiental Rural (CAR)</strong>, com aproximadamente 500 mil precisando apenas confirmar concordância com as análises já realizadas. A conclusão é essencial para regularização ambiental e acesso a crédito agrícola.",
+    imagem: "assets/images/noticias/validacao-car-mgi-notificacoes.png",
+    legenda: "CAR em validação — MGI envia notificações para proprietários rurais",
+    link: "noticias/mgi-validacao-car-cadastro-ambiental-rural-2026.html",
+    destaque: true
+  },
+  {
+    titulo: "IBAMA cria Sistema Prisma para consulta de indicadores ambientais de imóveis rurais",
+    data: "2026-08-04",
+    resumo: "O <strong>IBAMA</strong> instituiu, pela <strong>Portaria nº 151/2026</strong>, o <strong>Sistema Prisma</strong>, plataforma que consolida e cruza dados do <strong>Cadastro Ambiental Rural (CAR)</strong> com outras bases públicas para apoiar a análise de indicadores de integridade e conformidade ambiental de imóveis rurais em todo o país.",
+    imagem: "assets/images/noticias/ibama-sistema-prisma-2026.png",
+    legenda: "Sistema Prisma, do IBAMA — consulta de indicadores de integridade ambiental de imóveis rurais",
+    link: "noticias/ibama-sistema-prisma-2026.html",
+    destaque: false
+  },
+  {
     titulo: "Audiência pública em Araguaína abre a elaboração do Plano de Manejo da APA das Nascentes",
     data: "2026-07-31",
     resumo: "A primeira audiência pública do <strong>Plano de Manejo da APA das Nascentes de Araguaína</strong> acontece em <strong>11 de agosto</strong>, às 8h, no auditório do Sebrae. Fruto de convênio entre <strong>Naturatins</strong>, Prefeitura de Araguaína e <strong>IAC/UFT</strong>, o processo prevê 480 dias de trabalho, três rodadas de audiências e oficinas comunitárias nos três municípios da unidade. Acesse o Plano de Trabalho e o Plano de Comunicação e conheça o site exclusivo do projeto.",
     imagem: "assets/images/noticias/apa-nascentes-araguaina-plano-manejo.jpg",
     legenda: "APA das Nascentes de Araguaína, em área de transição entre o Cerrado e a Amazônia — Foto: Benilson Sousa/Governo do Tocantins",
     link: "noticias/apa-nascentes-araguaina-plano-manejo-audiencia.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Justiça determina recuperação de mais de 600 hectares de Cerrado desmatados irregularmente em Palmas",
