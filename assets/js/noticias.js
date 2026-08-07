@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Representantes da AMBTO tomam posse no Conselho Gestor da APA Serra do Lajeado",
+    data: "2026-08-07",
+    resumo: "Representantes da <strong>AMBTO</strong> participaram da cerimônia de posse dos membros do Conselho Gestor da <strong>Área de Proteção Ambiental (APA) Serra do Lajeado</strong>. A entidade é representada pelos engenheiros ambientais <strong>Rodrigo Martins Ribeiro</strong> (titular) e <strong>Cláudio André Costa Macedo</strong> (suplente). A participação reforça o compromisso da entidade com a gestão participativa das unidades de conservação, contribuindo tecnicamente para o fortalecimento das políticas públicas de proteção ambiental e uso sustentável dos recursos naturais no Tocantins.",
+    imagem: "assets/images/noticias/posse-ambto-conselho-gestor-apa-serra-lajeado-2026.jpg",
+    legenda: "",
+    link: "noticias/posse-ambto-conselho-gestor-apa-serra-lajeado-2026.html",
+    destaque: true
+  },
+  {
     titulo: "Com R$ 56 milhões do Fundo Amazônia, contrato firmado entre o Governo do Tocantins e o BNDES promete agilizar a análise no CAR e aprimorar o monitoramento por satélite no Estado",
     data: "2026-08-05",
     resumo: "O Estado do Tocantins assinou <strong>Contrato de Colaboração Financeira Não Reembolsável</strong> com o <strong>BNDES</strong>, captando mais de <strong>R$ 56 milhões</strong> do <strong>Fundo Amazônia</strong> para o <strong>Projeto de Fortalecimento da Gestão Ambiental (SustenTO)</strong>. Os recursos finançarão modernização do <strong>CAR</strong>, criação do <strong>Cigma</strong> (Centro de Inteligência Geográfica), monitoramento por satélite e equipamentos para brigadas do <strong>Naturatins</strong> no combate a incêndios florestais.",
     imagem: "assets/images/noticias/fundo-amazonia-bndes-governodotocantins-recursos.png",
     legenda: "",
     link: "noticias/tocantins-sustenTO-fundo-amazonia-56-milhoes-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "845 mil proprietários rurais são notificados pelo Ministério da Gestão e da Inovação em Serviços Públicos para realizarem a validação das informações do Cadastro Ambiental Rural",
