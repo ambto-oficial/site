@@ -21,6 +21,7 @@ const AMBTO_NOTICIAS = [
     data: "2026-08-07",
     resumo: "Representantes da <strong>AMBTO</strong> participaram da cerimônia de posse dos membros do Conselho Gestor da <strong>Área de Proteção Ambiental (APA) Serra do Lajeado</strong>. A entidade é representada pelos engenheiros ambientais <strong>Rodrigo Martins Ribeiro</strong> (titular) e <strong>Cláudio André Costa Macedo</strong> (suplente). A participação reforça o compromisso da entidade com a gestão participativa das unidades de conservação, contribuindo tecnicamente para o fortalecimento das políticas públicas de proteção ambiental e uso sustentável dos recursos naturais no Tocantins.",
     imagem: "assets/images/noticias/posse-ambto-conselho-gestor-apa-serra-lajeado-2026.jpg",
+    posicaoImagem: "top",
     legenda: "",
     link: "noticias/posse-ambto-conselho-gestor-apa-serra-lajeado-2026.html",
     destaque: true

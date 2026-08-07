@@ -214,9 +214,10 @@ document.querySelectorAll('#footerYear').forEach(el => {
     const legenda = destaqueItem.legenda
       ? `<p style="font-size:.72rem;color:var(--cinza-claro);margin:.4rem 0 0;line-height:1.4;font-style:italic">${destaqueItem.legenda}</p>`
       : '';
+    const posicaoImg = destaqueItem.posicaoImagem || 'center';
     const img = destaqueItem.imagem
       ? `<div style="margin:1rem 0 .25rem">
-           <img src="${destaqueItem.imagem}" alt="${destaqueItem.titulo}" style="width:100%;max-height:380px;object-fit:cover;border-radius:var(--raio)" loading="lazy" />
+           <img src="${destaqueItem.imagem}" alt="${destaqueItem.titulo}" style="width:100%;max-height:380px;object-fit:cover;object-position:${posicaoImg};border-radius:var(--raio)" loading="lazy" />
            ${legenda}
          </div>`
       : '';
