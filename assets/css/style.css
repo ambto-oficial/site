@@ -677,6 +677,16 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   font-size: .8rem;
   color: rgba(255,255,255,.45);
 }
+.footer-dev-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  transition: opacity var(--transicao);
+}
+.footer-dev-credit:hover { opacity: .75; }
+.footer-dev-logo { height: 20px; width: auto; }
 
 /* ── PAGE HEADER ── */
 .page-header {
