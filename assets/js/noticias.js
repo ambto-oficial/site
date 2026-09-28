@@ -17,6 +17,15 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Webgis desenvolvido mapeia 41 anos de queimadas em Palmas com dados de satélite",
+    data: "2026-09-27",
+    resumo: "Ferramenta gratuita, desenvolvida pelo presidente da <strong>AMBTO</strong>, eng. ambiental <strong>Tiago Sodré</strong>, reúne quatro décadas de mapeamento do fogo no município — de 1985 a 2025 — e mostra onde, quando, com que frequência e intensidade as queimadas ocorreram, e como a vegetação se recupera. Construído no <strong>Google Earth Engine</strong>, o aplicativo é uma contribuição técnica voluntária à gestão ambiental de Palmas.",
+    imagem: "assets/images/noticias/webgis-queimadas-palmas-capa.png",
+    legenda: "Webgis de Queimadas em Palmas (1985-2025) — quatro décadas de análise do fogo por satélite",
+    link: "noticias/webgis-queimadas-palmas-1985-2025.html",
+    destaque: true
+  },
+  {
     titulo: "Representantes da AMBTO tomam posse no Conselho Gestor da APA Serra do Lajeado",
     data: "2026-08-07",
     resumo: "Representantes da <strong>AMBTO</strong> participaram da cerimônia de posse dos membros do Conselho Gestor da <strong>Área de Proteção Ambiental (APA) Serra do Lajeado</strong>. A entidade é representada pelos engenheiros ambientais <strong>Rodrigo Martins Ribeiro</strong> (titular) e <strong>Cláudio André Costa Macedo</strong> (suplente). A participação reforça o compromisso da entidade com a gestão participativa das unidades de conservação, contribuindo tecnicamente para o fortalecimento das políticas públicas de proteção ambiental e uso sustentável dos recursos naturais no Tocantins.",
@@ -24,7 +33,7 @@ const AMBTO_NOTICIAS = [
     posicaoImagem: "top",
     legenda: "",
     link: "noticias/posse-ambto-conselho-gestor-apa-serra-lajeado-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Com R$ 56 milhões do Fundo Amazônia, contrato firmado entre o Governo do Tocantins e o BNDES promete agilizar a análise no CAR e aprimorar o monitoramento por satélite no Estado",
