@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Prefeitura apresenta à Câmara o cronograma de revisão do Plano Diretor de Palmas; projeto deve chegar ao Legislativo em agosto de 2027",
+    data: "2026-10-14",
+    resumo: "A <strong>Sempdu</strong> apresentou à Câmara Municipal o cronograma da <strong>Revisão Participativa do Plano Diretor de Palmas</strong>, que vai atualizar a <strong>Lei Complementar nº 400/2018</strong>. O projeto de lei deve chegar ao Legislativo em <strong>agosto de 2027</strong>. A <strong>AMBTO</strong> defende a participação ativa dos engenheiros e engenheiras ambientais no processo para corrigir problemas da lei atual, como a faixa de <strong>APP do Lago de Palmas</strong>, que não conversa com o Código Florestal, e as áreas do <strong>SISMIV</strong> sem delimitação clara.",
+    imagem: "assets/images/noticias/revisao-plano-diretor-palmas-2026.jpg",
+    legenda: "Apresentação do cronograma de revisão do Plano Diretor na Câmara Municipal de Palmas. Foto: Prefeitura de Palmas",
+    link: "noticias/revisao-plano-diretor-palmas-cronograma-2026.html",
+    destaque: true
+  },
+  {
     titulo: "Webgis desenvolvido mapeia 41 anos de queimadas em Palmas com dados de satélite",
     data: "2026-09-27",
     resumo: "Ferramenta gratuita, desenvolvida pelo presidente da <strong>AMBTO</strong>, eng. ambiental <strong>Tiago Sodré</strong>, reúne quatro décadas de mapeamento do fogo no município — de 1985 a 2025 — e mostra onde, quando, com que frequência e intensidade as queimadas ocorreram, e como a vegetação se recupera. Construído no <strong>Google Earth Engine</strong>, o aplicativo é uma contribuição técnica voluntária à gestão ambiental de Palmas.",
     imagem: "assets/images/noticias/webgis-queimadas-palmas-capa.png",
     legenda: "Webgis de Queimadas em Palmas (1985-2025) — quatro décadas de análise do fogo por satélite",
     link: "noticias/webgis-queimadas-palmas-1985-2025.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Representantes da AMBTO tomam posse no Conselho Gestor da APA Serra do Lajeado",
