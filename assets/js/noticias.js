@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "Seca atinge 100% do território do Tocantins, segundo a ANA, e Governo do Estado reconhece impactos das adversidades climáticas por decreto",
+    data: "2026-10-21",
+    resumo: "O <strong>Monitor de Secas</strong> da <strong>ANA</strong> aponta seca em <strong>100% do território</strong> do Tocantins em setembro de 2026. O Governo do Estado editou o <strong>Decreto nº 7.251/2026</strong>, que reconhece os impactos sociais e econômicos das sucessivas adversidades climáticas e define as atribuições dos órgãos de apoio às comunidades e aos setores produtivos. Em Paraíso do Tocantins, a crise de abastecimento levou o município a decretar emergência por 180 dias.",
+    imagem: "assets/images/noticias/secas-tocantins.jpg",
+    legenda: "Infográfico da AMBTO com dados do Monitor de Secas da ANA: seca atinge 100% do território do Tocantins",
+    link: "noticias/seca-tocantins-decreto-7251-2026.html",
+    destaque: true
+  },
+  {
     titulo: "Prefeitura apresenta à Câmara o cronograma de revisão do Plano Diretor de Palmas; projeto deve chegar ao Legislativo em agosto de 2027",
     data: "2026-10-14",
     resumo: "A <strong>Sempdu</strong> apresentou à Câmara Municipal o cronograma da <strong>Revisão Participativa do Plano Diretor de Palmas</strong>, que vai atualizar a <strong>Lei Complementar nº 400/2018</strong>. O projeto de lei deve chegar ao Legislativo em <strong>agosto de 2027</strong>. A <strong>AMBTO</strong> defende a participação ativa dos engenheiros e engenheiras ambientais no processo para corrigir problemas da lei atual, como a faixa de <strong>APP do Lago de Palmas</strong>, que não conversa com o Código Florestal, e as áreas do <strong>SISMIV</strong> sem delimitação clara.",
     imagem: "assets/images/noticias/revisao-plano-diretor-palmas-2026.jpg",
     legenda: "Apresentação do cronograma de revisão do Plano Diretor na Câmara Municipal de Palmas. Foto: Prefeitura de Palmas",
     link: "noticias/revisao-plano-diretor-palmas-cronograma-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Webgis desenvolvido mapeia 41 anos de queimadas em Palmas com dados de satélite",
