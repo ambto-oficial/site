@@ -509,6 +509,44 @@ if (formCarteirinha) {
 
 const formMembros = document.getElementById('formMembros');
 if (formMembros) {
+  const areaLogin  = document.getElementById('areaLogin');
+  const areaPainel = document.getElementById('areaPainel');
+  const CHAVE_SESSAO = 'ambto_membro';
+
+  // A sessão vale só enquanto a aba estiver aberta. Não guarda CPF nem data de nascimento.
+  const lerSessao = () => {
+    try { return JSON.parse(sessionStorage.getItem(CHAVE_SESSAO) || 'null'); } catch { return null; }
+  };
+  const gravarSessao = dados => {
+    try { sessionStorage.setItem(CHAVE_SESSAO, JSON.stringify(dados)); } catch { /* modo privado */ }
+  };
+  const limparSessao = () => {
+    try { sessionStorage.removeItem(CHAVE_SESSAO); } catch { /* modo privado */ }
+  };
+
+  function mostrarPainel(m) {
+    document.getElementById('painelNome').textContent  = m.nome || 'associado(a)';
+    document.getElementById('painelEmail').textContent = m.email;
+    document.getElementById('painelPasta').href        = m.pastaUrl;
+    areaLogin.hidden  = true;
+    areaPainel.hidden = false;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function mostrarLogin() {
+    areaPainel.hidden = true;
+    areaLogin.hidden  = false;
+    document.getElementById('feedbackMembros').className = 'form-feedback';
+  }
+
+  const sessao = lerSessao();
+  if (sessao && sessao.pastaUrl) mostrarPainel(sessao);
+
+  document.getElementById('btnSair').addEventListener('click', () => {
+    limparSessao();
+    mostrarLogin();
+  });
+
   formMembros.addEventListener('submit', async e => {
     e.preventDefault();
     const btn      = document.getElementById('btnMembros');
@@ -520,7 +558,7 @@ if (formMembros) {
     }
     if (!GAS_URLS.membros) {
       feedback.className   = 'form-feedback error';
-      feedback.textContent = '❌ Serviço temporariamente indisponível. Tente novamente mais tarde.';
+      feedback.textContent = 'Serviço temporariamente indisponível. Tente novamente mais tarde.';
       return;
     }
 
@@ -539,27 +577,25 @@ if (formMembros) {
       const r = await resp.json();
 
       if (r.status === 'ok') {
-        document.getElementById('membrosOkMsg').textContent =
-          'Enviamos o acesso para o e-mail Google cadastrado (' + r.emailMascarado + '). ' +
-          'Você também receberá um aviso do Google Drive nessa caixa de entrada.';
-        document.getElementById('membrosPasta').href = r.pastaUrl;
-        formMembros.style.display = 'none';
-        document.getElementById('membrosOk').style.display = 'block';
+        const membro = { nome: r.nome || '', email: r.emailMascarado, pastaUrl: r.pastaUrl };
+        gravarSessao(membro);
         formMembros.reset();
+        mostrarPainel(membro);
         return;
       }
 
       const msgs = {
-        invalido:  '❌ Não encontramos um cadastro com esses dados. Confira o CPF e a data de nascimento.',
-        inativo:   '⚠️ Seu cadastro não está ativo no momento. Fale com a AMBTO pela página de contato.',
-        bloqueado: '⚠️ Muitas tentativas. Aguarde cerca de 1 hora ou fale com a AMBTO.',
-        error:     '❌ Não foi possível liberar o acesso agora. Fale com a AMBTO pela página de contato.'
+        invalido:  ['error', 'Não encontramos um cadastro com esses dados. Confira o CPF e a data de nascimento.'],
+        inativo:   ['warn',  'Seu cadastro não está ativo no momento. Fale com a AMBTO pela página de contato.'],
+        bloqueado: ['warn',  'Muitas tentativas seguidas. Aguarde cerca de 1 hora ou fale com a AMBTO.'],
+        error:     ['error', 'Não foi possível liberar o acesso agora. Fale com a AMBTO pela página de contato.']
       };
-      feedback.className   = 'form-feedback error';
-      feedback.textContent = msgs[r.status] || msgs.error;
+      const [tipo, texto] = msgs[r.status] || msgs.error;
+      feedback.className   = 'form-feedback ' + tipo;
+      feedback.textContent = texto;
     } catch {
       feedback.className   = 'form-feedback error';
-      feedback.textContent = '❌ Erro de conexão. Tente novamente em instantes.';
+      feedback.textContent = 'Erro de conexão. Tente novamente em instantes.';
     } finally {
       btn.classList.remove('btn-loading');
       btn.disabled = false;

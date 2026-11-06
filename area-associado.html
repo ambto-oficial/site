@@ -40,7 +40,7 @@
         <li><a href="noticias.html">Notícias</a></li>
         <li><a href="galeria.html">Galeria</a></li>
         <li><a href="contato.html">Contato</a></li>
-        <li><a href="area-associado.html" class="active">Área do Associado</a></li>
+        <li><a href="area-associado.html" class="nav-area active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Área do Associado</a></li>
       </ul>
       <button class="navbar-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -56,51 +56,136 @@
     </div>
   </header>
 
-  <!-- ── ACESSO ── -->
+  <!-- ── ÁREA DO ASSOCIADO ── -->
   <section class="section">
-    <div class="container" style="max-width:640px">
-      <p class="section-label">Acesso exclusivo</p>
-      <h2 class="section-title" style="margin-bottom:1rem">Confirme seus <span>dados</span></h2>
-      <p style="color:var(--cinza-medio);margin-bottom:1.5rem">
-        Informe seu CPF e data de nascimento. Se o seu cadastro estiver <strong>ativo</strong>,
-        liberaremos o acesso à pasta no Google Drive para o <strong>e-mail Google informado no seu cadastro</strong>.
-      </p>
+    <div class="container">
 
-      <div class="form-section" style="padding:2rem">
-        <form id="formMembros" novalidate>
-          <div class="form-grid">
-            <div class="form-group full">
-              <label for="mCpf">CPF <span class="req">*</span></label>
-              <input type="text" id="mCpf" name="cpf" class="form-control" placeholder="000.000.000-00" maxlength="14" inputmode="numeric" autocomplete="off" required />
-            </div>
-            <div class="form-group full">
-              <label for="mNasc">Data de nascimento <span class="req">*</span></label>
-              <input type="date" id="mNasc" name="dataNasc" class="form-control" autocomplete="off" required />
-            </div>
-          </div>
-          <div class="form-submit">
-            <button type="submit" class="btn btn-primary" id="btnMembros">Acessar a pasta</button>
-          </div>
-          <div class="form-feedback" id="feedbackMembros" role="status" aria-live="polite"></div>
-        </form>
+      <!-- Estado 1: acesso -->
+      <div id="areaLogin">
+        <div class="area-wrap">
+          <aside class="area-side">
+            <span class="area-eyebrow">
+              <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Acesso exclusivo
+            </span>
+            <h2>Um benefício para quem constrói a AMBTO</h2>
+            <p>A AMBTO reúne, em um só lugar, materiais técnicos e arquivos úteis selecionados para a categoria.</p>
+            <ul class="area-benefits">
+              <li>
+                <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                Materiais e documentos de apoio ao exercício da profissão
+              </li>
+              <li>
+                <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                Acesso protegido, restrito a associados com cadastro ativo
+              </li>
+              <li>
+                <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                Conectando o presente ao futuro da Engenharia Ambiental
+              </li>
+            </ul>
+          </aside>
 
-        <!-- Resultado de sucesso (exibido pelo main.js) -->
-        <div id="membrosOk" style="display:none;text-align:center">
-          <p style="font-size:2rem;margin-bottom:.5rem">✅</p>
-          <h3 style="margin-bottom:.75rem">Acesso liberado!</h3>
-          <p id="membrosOkMsg" style="color:var(--cinza-medio);margin-bottom:1.25rem"></p>
-          <a id="membrosPasta" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Abrir pasta no Google Drive</a>
-          <p style="font-size:.85rem;color:var(--cinza-medio);margin-top:1.25rem">
-            Abra o link <strong>logado com a conta Google acima</strong>. Se aparecer "Solicitar acesso",
-            você está em outra conta — troque de conta no canto superior direito do Drive.
-          </p>
+          <div class="area-main">
+            <h3>Entrar na Área do Associado</h3>
+            <p class="area-lead">
+              Informe seu CPF e sua data de nascimento. Se o cadastro estiver ativo, o acesso à pasta
+              é liberado para o <strong>e-mail Google registrado na AMBTO</strong>.
+            </p>
+
+            <form id="formMembros" novalidate>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="mCpf">CPF <span class="req">*</span></label>
+                  <input type="text" id="mCpf" name="cpf" class="form-control" placeholder="000.000.000-00" maxlength="14" inputmode="numeric" autocomplete="off" required />
+                </div>
+                <div class="form-group">
+                  <label for="mNasc">Data de nascimento <span class="req">*</span></label>
+                  <input type="date" id="mNasc" name="dataNasc" class="form-control" autocomplete="off" required />
+                </div>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary btn-block" id="btnMembros">
+                  Entrar
+                  <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+              </div>
+              <div class="form-feedback" id="feedbackMembros" role="status" aria-live="polite"></div>
+            </form>
+
+            <p class="area-hint">
+              <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              <span>Ainda não é associado(a)? <a href="sobre.html#associe-se"><strong>Associe-se à AMBTO</strong></a>.
+              Precisa de ajuda? <a href="contato.html"><strong>Fale conosco</strong></a>.</span>
+            </p>
+          </div>
         </div>
       </div>
 
-      <p style="font-size:.85rem;color:var(--cinza-medio);margin-top:1.5rem">
-        Ainda não é associado(a)? <a href="sobre.html#associe-se"><strong>Associe-se aqui</strong></a>.
-        Problemas com o acesso? <a href="contato.html"><strong>Fale com a AMBTO</strong></a>.
-      </p>
+      <!-- Estado 2: painel do associado (exibido pelo main.js após o acesso) -->
+      <div id="areaPainel" hidden>
+        <div class="area-painel">
+
+          <div class="area-welcome">
+            <div>
+              <span class="area-badge">
+                <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                Cadastro ativo
+              </span>
+              <h2>Olá, <span id="painelNome">associado(a)</span></h2>
+              <p>Seja bem-vindo(a) à Área do Associado da AMBTO.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" id="btnSair">
+              <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+              Sair
+            </button>
+          </div>
+
+          <div class="area-destaque">
+            <div class="area-destaque-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>
+            </div>
+            <div class="area-destaque-body">
+              <h3>Pasta de materiais da AMBTO</h3>
+              <p>Arquivos úteis selecionados pela AMBTO para os associados. O acesso está vinculado à conta Google <strong id="painelEmail"></strong>.</p>
+            </div>
+            <a id="painelPasta" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-white">
+              Abrir no Google Drive
+              <svg class="area-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+
+          <div class="area-cards">
+            <div class="area-card">
+              <div class="area-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
+              </div>
+              <h4>Carteirinha +AMBTO</h4>
+              <p>Apresente a carteirinha nos parceiros do Programa +AMBTO e aproveite condições especiais.</p>
+              <a class="area-link" href="programa.html">Conhecer o programa
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div class="area-card">
+              <div class="area-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <h4>Fale com a AMBTO</h4>
+              <p>Atualização de cadastro, dúvidas sobre o acesso ou sugestões de materiais para a pasta.</p>
+              <a class="area-link" href="contato.html">Entrar em contato
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="area-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <p>Abra a pasta <strong>logado(a) na conta Google informada acima</strong>. Se o Drive exibir “Solicitar acesso”, você está em outra conta: use o seletor de contas no canto superior direito.</p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -129,7 +214,6 @@
             <li><a href="noticias.html">Notícias</a></li>
             <li><a href="galeria.html">Galeria</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a href="area-associado.html">Área do Associado</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -153,6 +237,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>
