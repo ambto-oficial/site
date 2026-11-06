@@ -902,6 +902,14 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 .area-hint .area-icon { width: 16px; height: 16px; margin-top: 2px; color: var(--verde); }
 .area-main .form-grid { grid-template-columns: 1fr; }
 .area-main .form-submit { margin-top: 1.5rem; }
+.area-privacidade {
+  display: flex; gap: .6rem; align-items: flex-start;
+  margin-top: 1.5rem; padding: .85rem 1rem;
+  background: var(--fundo); border: 1px solid var(--borda); border-radius: var(--raio);
+}
+.area-privacidade .area-icon { width: 18px; height: 18px; margin-top: 2px; color: var(--verde); }
+.area-privacidade p { margin: 0; font-size: .78rem; line-height: 1.55; color: #606062; }
+.area-privacidade a { color: var(--verde); }
 
 /* Painel do associado (após o acesso) */
 .area-painel { max-width: 960px; margin-inline: auto; }
