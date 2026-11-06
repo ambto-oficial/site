@@ -15,7 +15,8 @@ const AMBTO_NUM_ASSOCIADOS = 320;
 const GAS_URLS = {
   associado:   'https://script.google.com/macros/s/AKfycbzGxRXz-zAUeAS6H6BrD3M9Kl7g3XpwxNjpcsvLjHzHvsXBxyXpK2QMHFbVLuLGeyDI/exec',
   carteirinha: 'https://script.google.com/macros/s/AKfycbw7C-xT-hYNrNk1S0PMVCZpVp9IqLvXmTsi6_y5ovgZcKSsNu1DO5BN-NGOnslK5TZVfA/exec',
-  contato:     'https://script.google.com/macros/s/AKfycbzfVYofzAQ5hDkW7f-DV5T1v6vWMHF182ZkvMgTWdgLL1W73Yi1-xIQ1xgGfQo7wUyU/exec'
+  contato:     'https://script.google.com/macros/s/AKfycbzfVYofzAQ5hDkW7f-DV5T1v6vWMHF182ZkvMgTWdgLL1W73Yi1-xIQ1xgGfQo7wUyU/exec',
+  membros:     'https://script.google.com/macros/s/AKfycbxIDKSYwE1-fQC3eQx14_QY7fs3d-2axwHeyfcMtr2mAaxQ8N_AfbruzZk3R4xwfaPbUg/exec' // Área do Associado — colar aqui a URL do gas-scripts/gas-membros.js após publicar
 };
 
 // Fotos da galeria
@@ -364,7 +365,7 @@ function maskCPF(input) {
   });
 }
 
-document.querySelectorAll('#cpf, #cCpf').forEach(maskCPF);
+document.querySelectorAll('#cpf, #cCpf, #mCpf').forEach(maskCPF);
 
 // Upload: mostrar nome do arquivo
 function setupUploadLabel(inputId, labelId) {
@@ -500,6 +501,68 @@ if (formCarteirinha) {
       btn.disabled = false;
       btn.textContent = 'Solicitar minha Carteirinha +AMBTO';
       feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+}
+
+/* ── ÁREA DO ASSOCIADO: acesso à pasta do Drive ─────── */
+
+const formMembros = document.getElementById('formMembros');
+if (formMembros) {
+  formMembros.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn      = document.getElementById('btnMembros');
+    const feedback = document.getElementById('feedbackMembros');
+
+    if (!formMembros.checkValidity()) {
+      formMembros.reportValidity();
+      return;
+    }
+    if (!GAS_URLS.membros) {
+      feedback.className   = 'form-feedback error';
+      feedback.textContent = '❌ Serviço temporariamente indisponível. Tente novamente mais tarde.';
+      return;
+    }
+
+    const fd = new FormData(formMembros);
+    btn.classList.add('btn-loading');
+    btn.disabled = true;
+    feedback.className = 'form-feedback';
+
+    try {
+      // text/plain evita o preflight CORS (o Apps Script não responde a OPTIONS)
+      const resp = await fetch(GAS_URLS.membros, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ cpf: fd.get('cpf'), dataNasc: fd.get('dataNasc') })
+      });
+      const r = await resp.json();
+
+      if (r.status === 'ok') {
+        document.getElementById('membrosOkMsg').textContent =
+          'Enviamos o acesso para o e-mail Google cadastrado (' + r.emailMascarado + '). ' +
+          'Você também receberá um aviso do Google Drive nessa caixa de entrada.';
+        document.getElementById('membrosPasta').href = r.pastaUrl;
+        formMembros.style.display = 'none';
+        document.getElementById('membrosOk').style.display = 'block';
+        formMembros.reset();
+        return;
+      }
+
+      const msgs = {
+        invalido:  '❌ Não encontramos um cadastro com esses dados. Confira o CPF e a data de nascimento.',
+        inativo:   '⚠️ Seu cadastro não está ativo no momento. Fale com a AMBTO pela página de contato.',
+        bloqueado: '⚠️ Muitas tentativas. Aguarde cerca de 1 hora ou fale com a AMBTO.',
+        error:     '❌ Não foi possível liberar o acesso agora. Fale com a AMBTO pela página de contato.'
+      };
+      feedback.className   = 'form-feedback error';
+      feedback.textContent = msgs[r.status] || msgs.error;
+    } catch {
+      feedback.className   = 'form-feedback error';
+      feedback.textContent = '❌ Erro de conexão. Tente novamente em instantes.';
+    } finally {
+      btn.classList.remove('btn-loading');
+      btn.disabled = false;
     }
   });
 }
