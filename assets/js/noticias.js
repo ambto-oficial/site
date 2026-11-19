@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "AMBTO convoca Assembleia Geral Extraordinária para compor a Comissão Eleitoral e indicar representantes para o Plenário do CREA-TO",
+    data: "2026-11-19",
+    resumo: "A <strong>AMBTO</strong> convoca todos os seus associados para uma <strong>Assembleia Geral Extraordinária</strong>, a ser realizada em <strong>26 de novembro de 2026</strong>, das <strong>19h às 20h</strong>, na modalidade <strong>online</strong>, por videoconferência. A pauta será a composição da <strong>Comissão Eleitoral</strong> e a aprovação do <strong>regimento eleitoral</strong> para a eleição dos representantes da entidade junto ao plenário do <strong>CREA-TO</strong> no triênio <strong>2027-2029</strong>. O link de acesso será divulgado no site e no Instagram da AMBTO.",
+    imagem: "assets/images/noticias/edital-convocacao-ago-eleicoes-crea-to-2026.png",
+    legenda: "Edital de Convocação da Assembleia Geral Extraordinária da AMBTO — 26/11/2026, das 19h às 20h, online",
+    link: "noticias/convocacao-assembleia-eleicoes-crea-to-2026.html",
+    destaque: true
+  },
+  {
     titulo: "Seca atinge 100% do território do Tocantins, segundo a ANA, e Governo do Estado reconhece impactos das adversidades climáticas por decreto",
     data: "2026-10-21",
     resumo: "O <strong>Monitor de Secas</strong> da <strong>ANA</strong> aponta seca em <strong>100% do território</strong> do Tocantins em setembro de 2026. O Governo do Estado editou o <strong>Decreto nº 7.251/2026</strong>, que reconhece os impactos sociais e econômicos das sucessivas adversidades climáticas e define as atribuições dos órgãos de apoio às comunidades e aos setores produtivos. Em Paraíso do Tocantins, a crise de abastecimento levou o município a decretar emergência por 180 dias.",
     imagem: "assets/images/noticias/secas-tocantins.jpg",
     legenda: "Infográfico da AMBTO com dados do Monitor de Secas da ANA: seca atinge 100% do território do Tocantins",
     link: "noticias/seca-tocantins-decreto-7251-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Prefeitura apresenta à Câmara o cronograma de revisão do Plano Diretor de Palmas; projeto deve chegar ao Legislativo em agosto de 2027",
