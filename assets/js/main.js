@@ -8,7 +8,7 @@
 /* ── Configurações globais ─────────────────────────── */
 
 // Número atual de associados (atualizar aqui quando necessário)
-const AMBTO_NUM_ASSOCIADOS = 320;
+const AMBTO_NUM_ASSOCIADOS = 330;
 
 // URLs dos Google Apps Script Web Apps
 // Substitua pelas URLs reais após publicar os scripts
