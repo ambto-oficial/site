@@ -17,13 +17,22 @@
 
 const AMBTO_NOTICIAS = [
   {
+    titulo: "CEZEE aprova por unanimidade nova proposta do Zoneamento Ecológico-Econômico do Tocantins",
+    data: "2026-11-23",
+    resumo: "A Comissão Estadual de Zoneamento Ecológico-Econômico (<strong>CEZEE</strong>) aprovou por unanimidade a nova proposta do <strong>ZEE do Tocantins</strong>, construída em consenso entre o setor produtivo, a sociedade civil e o poder público. A AMBTO acompanhou a reunião. O texto segue agora para o <strong>Coema</strong>.",
+    imagem: "assets/images/noticias/cezee-zee-tocantins-reuniao.jpg",
+    legenda: "Membros da CEZEE votam a nova proposta do ZEE do Tocantins na 18ª Reunião Ordinária, na Seplan, em Palmas. Foto: Eng. Rodrigo Ribeiro.",
+    link: "noticias/cezee-aprova-proposta-zee-tocantins-2026.html",
+    destaque: true
+  },
+  {
     titulo: "AMBTO convoca Assembleia Geral Extraordinária para compor a Comissão Eleitoral e indicar representantes para o Plenário do CREA-TO",
     data: "2026-11-19",
     resumo: "A <strong>AMBTO</strong> convoca todos os seus associados para uma <strong>Assembleia Geral Extraordinária</strong>, a ser realizada em <strong>26 de novembro de 2026</strong>, das <strong>19h às 20h</strong>, na modalidade <strong>online</strong>, por videoconferência. A pauta será a composição da <strong>Comissão Eleitoral</strong> e a aprovação do <strong>regimento eleitoral</strong> para a eleição dos representantes da entidade junto ao plenário do <strong>CREA-TO</strong> no triênio <strong>2027-2029</strong>. O link de acesso será divulgado no site e no Instagram da AMBTO.",
     imagem: "assets/images/noticias/edital-convocacao-ago-eleicoes-crea-to-2026.png",
     legenda: "Edital de Convocação da Assembleia Geral Extraordinária da AMBTO — 26/11/2026, das 19h às 20h, online",
     link: "noticias/convocacao-assembleia-eleicoes-crea-to-2026.html",
-    destaque: true
+    destaque: false
   },
   {
     titulo: "Seca atinge 100% do território do Tocantins, segundo a ANA, e Governo do Estado reconhece impactos das adversidades climáticas por decreto",
